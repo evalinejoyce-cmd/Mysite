@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Running</title>
+<link rel="stylesheet" href="css/scratchstyles.css">
 </head>
 <body>
-
+<!-- come back and make the classes/styles work! -->
 
 <div class="header">
-<h1>Running</h1>
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="resume.html">Resume</a> |
-<a href="contact.html">Contact</a> |
+    <h1>Running</h1>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="resume.html">Resume</a> |
+    <a href="contact.html">Contact</a> |
+    <p></p>
+    <a href="#tableau">Jump to Tableau Graph</a>
 
 
 <div class="content">
-    <h4>I hate running.</h4>
+    <h4 class="box1 special" >I hate running.</h4>
 <h6>But I make it happen because it's good for me and it makes me happy.</h6>
 <img src="assets/img/runningphoto.jpeg" height=200px alt="Picture of running in the sunset"></div><p>This is my page about running. I started getting serious about running last year
     when my sister invited me to do a half marathon, so I trained and I did it! Here are some thoughts 
@@ -25,10 +28,11 @@
 <p>Here are some pictures of that day</p>
 <img src="assets/img/halfmarathonstart.jpeg" height=200px alt="Start of half marathon with beautiful morning sky">
 <img src="assets/img/halfmarathonend.jpeg" height=200px alt="End of half marathon, victory bread and milk">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 class="leftleaning">Half Marathon Preparation</h3>
 
-<h3>Half Marathon Preparation</h3>
-
-<ol>
+<ol class="leftleaning">
     <li>Running
         <ul>
             <li>Easy Runs</li>
@@ -51,15 +55,35 @@
             <li>The joy of being post run will carry the rest of this pain.</li>
         </ul>
 </ol>
-<iframe width="560" height="315"
+<p>So, you've decided to start running? well, use this to help you map your progress towards your dream half marathon time</p>
+<a href="app.html"> Open Running Pace Calculator </a>
+<p></p>
+<!-- this is the youtube video -->
+<!-- <iframe width="560" height="315" 
     src="https://www.youtube.com/embed/KQ4-D9d-lvA"
     title="YouTube video player"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
+    allowfullscreen
+    class="video">
+</iframe> -->
+<div class="video">
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/KQ4-D9d-lvA"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe>
 </div>
 
+
+<h2 id="tableau">My Tableau Visualization</h2>
+<p>Here we can visualize the winning time of marathon races for the last 50 years</p>
+
+<div class='tableauPlaceholder' id='viz1781624198340' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;Whorunstheworldofmarathons&#47;Sheet32&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Whorunstheworldofmarathons&#47;Sheet32' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;Whorunstheworldofmarathons&#47;Sheet32&#47;1.png' />
+     <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1781624198340');                   
+      var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+<!-- Insert app -->
 <div class="footer">
     copyright; Evy's website.
 </div>
