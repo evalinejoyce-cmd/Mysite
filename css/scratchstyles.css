@@ -1,0 +1,26 @@
+
+body {background-color: #f2f7ff;}
+h1 {
+    color: navy;
+}
+
+p {
+    font-family: Arial;
+}
+
+.special {
+    color: rgb(5, 12, 102);}
+
+.header {
+    text-align: center;
+}
+.bold {font-weight: bolder;}
+.box1 {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(184, 19, 19);
+    /* border:1px solid red; You can do it in one line*/ }
+
+
+    .video {text-align: center;}
+.leftleaning {text-align: left;}

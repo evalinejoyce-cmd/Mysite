@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Marathon Pace Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f7ff;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 80px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: navy;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            display: block;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Half Marathon Pace Calculator</h1>
+
+    <p>Enter your recent run:</p>
+
+    <label>Miles:</label><br>
+    <input type="number" id="miles" step="0.1"><br>
+
+    <label>Minutes:</label><br>
+    <input type="number" id="minutes"><br>
+
+    <button onclick="calculatePace()">Calculate</button>
+
+    <div id="result"></div>
+
+    <a href="scratch.html">Back to Scratch Page</a>
+
+</div>
+
+<script>
+
+function calculatePace() {
+
+    let miles = parseFloat(document.getElementById("miles").value);
+    let minutes = parseFloat(document.getElementById("minutes").value);
+
+    if (isNaN(miles) || isNaN(minutes) || miles <= 0) {
+        document.getElementById("result").innerHTML =
+            "Please enter valid numbers.";
+        return;
+    }
+
+    let pace = minutes / miles;
+
+    let projected = pace * 13.1;
+
+    document.getElementById("result").innerHTML =
+        "Pace: " +
+        pace.toFixed(2) +
+        " min/mile<br><br>" +
+        "Projected Half Marathon Time: " +
+        projected.toFixed(0) +
+        " minutes";
+}
+
+</script>
+
+</body>
+</html>
